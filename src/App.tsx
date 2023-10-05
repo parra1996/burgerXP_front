@@ -5,6 +5,7 @@ import Home from './containers/home/home'
 import Login from './containers/login/login'
 import Register from './containers/register/register'
 import Admin from './containers/admin/admin'
+import Header from './components/header/header';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <>
       <div className="App">
         <BrowserRouter>
-          {/* <Header /> */}
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -21,8 +22,6 @@ function App() {
           </Routes>
           {/* <Footer /> */}
         </BrowserRouter>
-
-
       </div>
     </>
   )
